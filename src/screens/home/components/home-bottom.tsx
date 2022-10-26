@@ -14,7 +14,7 @@ const HomeBottom = () => {
                         <div className='accessibility-simulator-background'/>
                         <span className='accessibility-simulator-label'>{sim.name}</span>
                         <div className='accessibility-simulator-icon-container'>
-                            <img className='accessibility-icon' src={sim.icon}/>
+                            <img className='accessibility-icon' alt={`${sim.name} icon`} src={sim.icon}/>
                         </div>
                     </div>
                 ))}
