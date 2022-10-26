@@ -19,7 +19,7 @@ const HomeTop = () => {
         <div className='home-container-top'>
             <section className='home-left-container'>
                 <img className='web-equity-icon' src={mainIcon}/>   
-                <h1 className='home-main-title'>Web Equity</h1>
+                <h1 className='home-main-title'>WebEquity</h1>
                 <h2 className='home-sub-title'>Website Accessibility Guide</h2>
                 <section className='home-button-container'>
                     <button className='home-button'>

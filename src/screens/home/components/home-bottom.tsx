@@ -1,24 +1,20 @@
 import React from 'react';
 import './styles/_home-bottom.scss';
+import { simulatorTiles } from '../simulator-tiles';
 
 const HomeBottom = () => {
-    const accessibilitySimulators = ["Color Blindness", "Mobility", "Blindness", "Dyslexia", "Deafness + Blindness", "Deafness"];
-    const blindnessIcon = require('../images/blindness.png');
-    const deafnessIcon = require('../images/deafness.png');
-    const dyslexiaIcon = require('../images/dyslexia.png');
-    const colorBlindnessIcon = require('../images/color-blindness.png');
-    const deafBlindIcon = require('../images/blind-deaf.png');
-    const mobilityIcon = require('../images/mobility.png');
-
     return (
         <div className='home-container-bottom' id='homeContainerBottom'>
+            <div className='accessibility-simulations-header'>
+                <h2>Accessibility Simulations</h2>
+            </div>
             <section className='accessibility-grid'>
-                {accessibilitySimulators.map(sim => (
+                {simulatorTiles.map(sim => (
                     <div className='accessibility-simulator-container'>
                         <div className='accessibility-simulator-background'/>
-                        <span className='accessibility-simulator-label'>{sim}</span>
+                        <span className='accessibility-simulator-label'>{sim.name}</span>
                         <div className='accessibility-simulator-icon-container'>
-                            <img className='accessibility-icon' src={colorBlindnessIcon}/>
+                            <img className='accessibility-icon' src={sim.icon}/>
                         </div>
                     </div>
                 ))}
