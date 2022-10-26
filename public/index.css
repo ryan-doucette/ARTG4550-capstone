@@ -4,4 +4,6 @@ html, body, #root {
     max-width: 100%;
     overflow-x: hidden;
     font-family: 'Helvetica', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
 }

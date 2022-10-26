@@ -18,7 +18,7 @@ const HomeTop = () => {
     return (
         <div className='home-container-top'>
             <section className='home-left-container'>
-                <img className='web-equity-icon' alt='WebEquity icon' src={mainIcon}/>   
+                <img className='web-equity-icon' alt='WebEquity icon' src={mainIcon} tabIndex={1}/>   
                 <h1 className='home-main-title'>WebEquity</h1>
                 <h2 className='home-sub-title'>Website Accessibility Guide</h2>
                 <section className='home-button-container'>
@@ -31,7 +31,8 @@ const HomeTop = () => {
                     <KeyboardArrowDownIcon fontSize="large" className='down-arrow-icon' onClick={scrollToBottom}/>
                 </section>
             </section>
-            <img className='wave-border' src={waveBorder} alt='wave border seperator'/>
+            {/* <img className='wave-border' src={waveBorder} alt='wave border seperator'/> */}
+            <div className='wave-border'></div>
             <section className='home-right-container'>
                 <div className='home-graphic-container'>
                     <img className='home-graphic' alt='home graphic' src={homeGraphicCenter}/>

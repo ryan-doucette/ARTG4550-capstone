@@ -10,13 +10,13 @@ const HomeBottom = () => {
             </div>
             <section className='accessibility-grid'>
                 {simulatorTiles.map(sim => (
-                    <div className='accessibility-simulator-container'>
+                    <button className='accessibility-simulator-container'>
                         <div className='accessibility-simulator-background'/>
                         <span className='accessibility-simulator-label'>{sim.name}</span>
                         <div className='accessibility-simulator-icon-container'>
                             <img className='accessibility-icon' alt={`${sim.name} icon`} src={sim.icon}/>
                         </div>
-                    </div>
+                    </button>
                 ))}
             </section>
         </div>
